@@ -1,0 +1,222 @@
+body {
+    background-color: #D32F2F;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.title_image {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.searchInput {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 9px -3px rgba(0,0,0,0.75);
+}
+
+.input {
+    font-family: "Josefin Sans", sans-serif;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.pokemon-block {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 260px
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch;
+    background-color: #F77676;
+    justify-content: space-around;
+    height: fit-content;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 9px 9px 0px rgba(0,0,0,0.75);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+}
+
+.number {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: pulse 1s linear infinite;
+    position: relative;
+    margin: auto;
+    content: none;
+}
+
+@keyframes pulse {
+    0% , 60% , 100% { 
+        transform:  scale(1) 
+    }
+    80% { 
+        transform:  scale(1.2)
+    }
+}
+
+.flip-card {
+    perspective: 1000px;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin-bottom: 55px;
+}
+
+.front-face, .back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+    top: 0;
+    left: 0;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+.front-face {
+    transform: rotateY(0deg);
+    z-index: 2;
+    width: 235px;
+    height: 250px;
+}
+
+.back-face {
+    text-transform: capitalize;
+    font-size: small;
+    height: 259px;
+    width: 215px;
+    transform: rotateY(180deg);
+    z-index: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.flip-card:hover .front-face {
+    transform: rotateY(-180deg);
+}
+
+.flip-card:hover .back-face {
+    transform: rotateY(0deg);
+}
+
+.type {
+    text-transform: capitalize;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+.progress-bar {
+    background-color: #76c7c0;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.buttons {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.buttons .previous {
+    background-color: #ffffff;
+    width: 70px;
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 6px 6px 9px -3px rgba(0,0,0,0.75);
+    border: 1px solid #000000;
+}
+
+.buttons .next {
+    background-color: #ffffff;
+    width: 70px;
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 6px 6px 9px -3px rgba(0,0,0,0.75);
+    border: 1px solid #000000;
+}
+
+.buttons .previous:hover, .buttons .next:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #D32F2F;
+}
+
+.info {
+    background-color: #ffffff;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-right: 3px;
+    padding-left: 3px;
+    box-shadow: 6px 6px 9px -3px rgba(0,0,0,0.75);
+    border: 1px solid #000000;
+}
