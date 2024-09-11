@@ -10,32 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img class="title_image" src="./La-Pokedex-4-9-2024.png" alt="Título Pokedex">
+    <header>
+        <img class="title_image" src="./La-Pokedex-4-9-2024.png" alt="Título Pokedex">
 
-    <form action="" class="searchInput" onsubmit="searchPokemon(event)">
-        <input class="input" type="text" name="pokemon" placeholder="Search for a Pokémon..." autocomplete="off">
-    </form>
+        <form action="" class="searchInput" onsubmit="searchPokemon(event)">
+            <input class="input" type="text" name="pokemon" placeholder="Search for a Pokémon..." autocomplete="off">
+        </form>
+    </header>
 
-    <div class="pokemon-container">
+    <main>
+        <div class="pokemon-container">
 
-    </div>
+        </div>
+    
+        <div class="buttons flex">
+            <!-- Previous Button -->
+            <btn href="#" class="previous flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                Previous
+            </btn>
+    
+            <!-- Next Button -->
+            <btn href="#" class="next flex items-center justify-center px-4 h-10 ms-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                Next
+            </btn>
+        </div>
 
-    <div class="buttons flex">
-        <!-- Previous Button -->
-        <btn href="#" class="previous flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-            Previous
-        </btn>
+        <span class="loader"></span>
+    </main>
 
-        <!-- Next Button -->
-        <btn href="#" class="next flex items-center justify-center px-4 h-10 ms-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-            Next
-        </btn>
-    </div>
-    <span class="loader"></span>
-
-    <div class="info">
-        <p>Made by: David Santiago Medina :)</p>
-    </div>
+    <footer>
+        <div class="info">
+            <p>Made by: David Santiago Medina :)</p>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>
