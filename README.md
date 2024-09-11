@@ -2,6 +2,8 @@
 # Desarrollo de Aplicaciones Web
 ## Introducción al Asíncronismo
 
+Nombre: David Santiago Medina Buitrago
+Link: https://dsaw-2024-2.github.io/intro-to-asyncronism-davidmedina0526/
 
 ## Funcionalidades
 
